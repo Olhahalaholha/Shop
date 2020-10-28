@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="{{ product_object.image }}">
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						{{ product_object.title }}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						$ {{ product_object.price }}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						$ {{ product_object.discount_price }} (discount price)
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						{{ product_object.description }}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+
+</html>
